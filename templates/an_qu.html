@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动问答</title>
+    <style type="text/css">
+    fieldset {
+        width: 750px;
+        background: #4876FF;
+        height: 600px;
+        margin: 150px 400px 0px
+    }
+    </style>
+</head>
+<body bgcolor="#7EC0EE">
+
+ <form>
+    <fieldset>
+        <legend align="center"><h2>自动问答</h2></legend>
+        </br>
+        <label><h3>问题：</h3></label><br>
+        <label style="color: red;">{{question}}</label></br>
+        <label><h3>候选答案:</h3></label><br>
+        {% for ans in answer %}
+            <label style="color:yellow;">{{ans}}</label><br><br>
+        {% endfor %}
+
+    </fieldset>
+    </form>
+
+
+</body>
+</html>
